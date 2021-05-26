@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AWSSDK.S3" Version="3.7.0.8" />
+    <PackageReference Include="FluentValidation.AspNetCore" Version="9.5.1" />
+    <PackageReference Include="IdentityServer4" Version="4.1.1" />
+    <PackageReference Include="IdentityServer4.AccessTokenValidation" Version="3.0.1" />
+    <PackageReference Include="MediatR" Version="9.0.0" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="9.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.1.12" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="6.0.7" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="6.0.7" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="6.0.7" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Ipstset.Auth.JwtTokens\Ipstset.Auth.JwtTokens.csproj" />
+    <ProjectReference Include="..\Ipstset.AzShop.Application\Ipstset.AzShop.Application.csproj" />
+    <ProjectReference Include="..\Ipstset.AzShop.Infrastructure\Ipstset.AzShop.Infrastructure.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+    <Folder Include="wwwroot\content\shops\" />
+  </ItemGroup>
+
+
+</Project>
